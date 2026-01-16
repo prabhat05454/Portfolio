@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modern Personal Portfolio Website">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern Personal Portfolio Website" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 </head>
 <body>
-
   <header class="hero">
     <nav>
       <h2 class="logo">MyPortfolio</h2>
-      <ul>
+      <ul class="menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <i class="uil uil-bars nav-toggle"></i>
     </nav>
-
     <div class="overlay"></div>
-
-    <div class="hero-content">
-      <img src="./WhatsApp Image 2026-01-09 at 7.16.57 PM.jpeg" class="profile-img" alt="My Photo">
-
+    <div class="hero-content fade-in">
+      <img src="./WhatsApp Image 2026-01-09 at 7.16.57 PM.jpeg" class="profile-img" alt="My Photo" />
       <h1>Hi, I'm Prabhat Kumar</h1>
-      <p>Front-End Developer | UI Designer | Tech Explorer</p>
+      <p>Full Stack Developer | UI Designer | Tech Explorer</p>
+      <a href="./PRABHAT RESUME.pdf" download class="btn resume-btn">
+        <i class="uil uil-file-download"></i> Download Resume
+      </a>
     </div>
   </header>
 
   <main>
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <article>
-        <p>
-          I’m a passionate web developer who enjoys creating clean, modern, and responsive user interfaces.
-          I love solving real-world problems through design and code. 
-          My goal is to continue improving as a developer while contributing to exciting digital projects.
-          When I'm not coding, I explore UI/UX trends and learn new technologies.
-        </p>
-      </article>
+      <p>
+        I’m a final-year Computer Engineering student and full-stack web developer with hands-on experience in React.js,
+        Node.js, MongoDB, and MySQL. I enjoy building fast, responsive, and user-focused applications—from modern UIs to
+        backend APIs. During my internship at Auriga IT Consulting, I translated UI designs into functional features,
+        built reusable components, improved performance, integrated APIs, debugged issues, and collaborated using Git,
+        Bitbucket, and Agile workflows.
+      </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="fade-in">
       <h2>Skills & Tools</h2>
       <div class="skills-container">
-        <article class="skill-card">HTML5 / Semantic Markup</article>
-        <article class="skill-card">CSS3 / Flexbox / Grid</article>
-        <article class="skill-card">JavaScript (ES6+)</article>
+        <article class="skill-card">HTML5</article>
+        <article class="skill-card">CSS3</article>
+        <article class="skill-card">JavaScript</article>
         <article class="skill-card">Responsive Web Design</article>
         <article class="skill-card">Git & GitHub</article>
         <article class="skill-card">UI/UX Basics</article>
@@ -62,59 +61,76 @@
     <!-- PROJECTS -->
     <section id="projects">
       <h2>Featured Projects</h2>
-
       <div class="projects-flex">
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=600">
+        <article class="project-card slide-left">
+          <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=800" alt="Portfolio Website">
           <h3>Portfolio Website</h3>
-          <p>
-            A visually appealing responsive portfolio built using HTML, CSS & Flexbox.
-            Includes navigation, overlays, and SEO tags.
-          </p>
+          <p>A fully responsive personal portfolio.</p>
         </article>
 
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600">
+        <article class="project-card slide-up">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="Todo Manager">
           <h3>Todo Manager</h3>
-          <p>
-            A powerful task tracker using Vanilla JS that stores tasks and
-            marks them complete in a stylish UI.
-          </p>
+          <p>Task tracker using local storage.</p>
         </article>
 
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600">
+        <article class="project-card slide-right">
+          <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?w=800" alt="Weather App">
           <h3>Weather App</h3>
-          <p>
-            An app using live APIs to display current weather, humidity, wind and conditions.
-          </p>
+          <p>Shows live temperature and humidity.</p>
+        </article>
+
+        <article class="project-card slide-up">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800" alt="Expense Tracker">
+          <h3>Expense Tracker</h3>
+          <p>Track income and spending easily.</p>
+        </article>
+
+        <article class="project-card slide-left">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Quiz App">
+          <h3>Quiz App</h3>
+          <p>Multiple choice quiz with score tracking.</p>
         </article>
       </div>
-
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <article>
-        <p>Email: prabhatkumarchoudhary2005@gmail.com</p>
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
 
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/prabhat-kumar-158644264" target="_blank">
-            <i class="uil uil-linkedin"></i>
-          </a>
-          <a href="https://github.com/prabhat05454" target="_blank">
-            <i class="uil uil-github"></i>
-          </a>
-          <a href="https://x.com/prabhatkum16815" target="_blank">
-            <i class="uil uil-twitter"></i>
-          </a>
+      <!-- ✅ EmailJS Ready Form -->
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" name="from_name" placeholder="Your Name" required>
         </div>
-      </article>
+
+        <div class="form-group">
+          <input type="email" name="from_email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">
+          <i class="uil uil-message"></i> Send Message
+        </button>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/prabhat-kumar-158644264" target="_blank"><i class="uil uil-linkedin"></i></a>
+        <a href="https://github.com/prabhat05454" target="_blank"><i class="uil uil-github"></i></a>
+        <a href="https://x.com/prabhatkum16815" target="_blank"><i class="uil uil-twitter"></i></a>
+      </div>
     </section>
   </main>
   <footer>
     © 2026 Prabhat Kumar — Designed & Coded with ♥
   </footer>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
 </body>
 </html>
